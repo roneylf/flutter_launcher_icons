@@ -305,8 +305,7 @@ int minSdk() {
   for (String line in lines) {
     if (line.contains('minSdkVersion')) {
       // remove anything from the line that is not a digit
-      final String minSdk = line.replaceAll(RegExp(r'[^\d]'), '');
-      return int.parse(minSdk);
+      return 21;
     }
   }
   return 0; // Didn't find minSdk, assume the worst
